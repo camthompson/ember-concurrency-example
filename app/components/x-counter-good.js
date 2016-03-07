@@ -15,7 +15,7 @@ export default Component.extend({
 
   incrementCount() {
     this.incrementProperty('count');
-    this.nextIncrement = run.later(_ => this.incrementCount(), 1000);
+    this.nextIncrement = run.later(() => this.incrementCount(), 1000);
   },
 
   willDestroy() {

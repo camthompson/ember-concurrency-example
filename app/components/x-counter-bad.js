@@ -15,6 +15,6 @@ export default Component.extend({
 
   incrementCount() {
     this.incrementProperty('count');
-    run.later(_ => this.incrementCount(), 1000);
+    run.later(() => this.incrementCount(), 1000);
   }
 });
