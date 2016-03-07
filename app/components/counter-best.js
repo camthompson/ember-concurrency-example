@@ -1,10 +1,8 @@
 import Ember from 'ember';
-import { task } from 'ember-concurrency';
+import { task, timeout } from 'ember-concurrency';
 
 const {
-  Component,
-  RSVP,
-  run
+  Component
 } = Ember;
 
 export default Component.extend({
@@ -17,11 +15,7 @@ export default Component.extend({
 
   incrementCount: task(function * () {
     this.incrementProperty('count');
-
-    yield new RSVP.Promise(function(resolve) {
-      run.later(() => resolve(), 1000);
-    });
-
+    yield timeout(1000);
     this.get('incrementCount').perform();
   })
 });
