@@ -1,0 +1,15 @@
+<button onclick={{perform sayHi}}>
+  Say hi!
+</button>
+<button onclick={{action 'cancel'}}>
+  Cancel
+</button>
+<p>
+  State:
+  {{#if sayHi.isRunning}}
+    Running
+  {{/if}}
+  {{#if sayHi.isIdle}}
+    Idle
+  {{/if}}
+</p>

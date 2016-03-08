@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('management');
   this.route('counter');
   this.route('cancelling');
+  this.route('state');
 });
 
 export default Router;
