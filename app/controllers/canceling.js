@@ -11,11 +11,5 @@ const SAY_HI = function * () {
 };
 
 export default Controller.extend({
-  sayHi: task(SAY_HI),
-
-  actions: {
-    cancel() {
-      this.get('sayHi').cancelAll();
-    }
-  }
+  sayHi: task(SAY_HI)
 });
