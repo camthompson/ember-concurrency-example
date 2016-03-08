@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('counter');
   this.route('canceling');
   this.route('state');
+  this.route('generators');
 });
 
 export default Router;
