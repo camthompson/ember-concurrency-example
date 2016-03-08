@@ -9,7 +9,7 @@ const {
 export default Controller.extend({
   success: task(function * () {
     let value = yield new RSVP.Promise(function(resolve) {
-      resolve(5);
+      resolve('Success!');
     });
     alert(value);
   }),
