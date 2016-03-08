@@ -65,22 +65,6 @@ background-image: url(dhh.png)
 * Query params
 * Transition abort/retry
 ---
-class: center, middle
-background-image: url(batman.jpg)
----
-# Installation
-```sh
-ember install ember-concurrency
-```
-```js
-//ember-cli-build.js or Brocfile.js
-var app = new EmberApp({
-  babel: {
-    includePolyfill: true,
-  },
-});
-```
----
 # Problems with async
 ---
 # Problems with async
@@ -101,25 +85,44 @@ var app = new EmberApp({
 3. Tracking state
 4. Constrainining concurrency
 ---
-# ember-concurrency
+class: center, middle
+background-image: url(batman.jpg)
 ---
-# ember-concurrency
-1. Scopes async
+# Installation
+```sh
+ember install ember-concurrency
+```
+```js
+//ember-cli-build.js or Brocfile.js
+var app = new EmberApp({
+  babel: {
+    includePolyfill: true,
+  },
+});
+```
 ---
-# ember-concurrency
-1. Scopes async
-2. Allows canceling async
+# Tasks!
 ---
-# ember-concurrency
-1. Scopes async
-2. Allows canceling async
-3. Exposes state of async
+# Tasks!
+1. Scope async
 ---
-# ember-concurrency
-1. Scopes async
-2. Allows canceling async
-3. Exposes state of async
-4. Adds constraints to async
+# Tasks!
+1. Scope async
+2. Allow canceling async
+---
+# Tasks!
+1. Scope async
+2. Allow canceling async
+3. Expose state of async
+---
+# Tasks!
+1. Scope async
+2. Allow canceling async
+3. Expose state of async
+4. Add constraints to async
+---
+class: center, middle
+# 🚫
 ---
 # More Info
 * [ember-concurrency homepage](http://ember-concurrency.com)
