@@ -2,12 +2,13 @@ import Ember from 'ember';
 import { task } from 'ember-concurrency';
 
 const {
-  Controller
+  Controller,
+  RSVP
 } = Ember;
 
 export default Controller.extend({
   success: task(function * () {
-    let value = yield new Promise(function(resolve) {
+    let value = yield new RSVP.Promise(function(resolve) {
       resolve(5);
     });
     alert(value);
@@ -15,7 +16,7 @@ export default Controller.extend({
 
   failure: task(function * () {
     try {
-      yield new Promise(function(resolve, reject) {
+      yield new RSVP.Promise(function(resolve, reject) {
         reject('FAILED!');
       });
     } catch(e) {
