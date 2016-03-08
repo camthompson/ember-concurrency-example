@@ -16,14 +16,39 @@
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
       .remark-slide-content { font-size: 32px; }
     </style>
+  </script>
   </head>
   <body>
     <textarea id="source">
-
+class: center, middle
+# ember-concurrency
+## Atlanta Ember
+## March 8 2016
+---
 class: center, middle
 
-# ember-concurrency
-The solution to so many problems you never knew you had
+# 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+---
+class: center, middle
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There
+    is a whole category of problems in Discourse (and other Ember apps!) that
+    ember-concurrency solves elegantly: <a
+      href="https://t.co/zrFjejNKil">https://t.co/zrFjejNKil</a></p>&mdash;
+  Robin Ward (@eviltrout) <a
+    href="https://twitter.com/eviltrout/status/703264010544795649">February 26,
+    2016</a></blockquote>
+---
+class: center, middle
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p
+    lang="en" dir="ltr"><a href="https://twitter.com/trek">@trek</a> Me too. I
+    didn&#39;t even realize how big a problem I had until I saw <a
+      href="https://twitter.com/machty">@machty</a>&#39;s solution</p>&mdash;
+  Robin Ward (@eviltrout) <a
+    href="https://twitter.com/eviltrout/status/703264660275990528">February 26,
+    2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js"
+  charset="utf-8"></script>
 ---
 class: center, top
 # @machty
@@ -39,7 +64,7 @@ background-image: url(dhh.png)
 * Transition abort/retry
 ---
 class: center, middle
-background-image: url(concurrency.jpg)
+background-image: url(batman.jpg)
 ---
 # Installation
 ```sh
@@ -54,29 +79,51 @@ var app = new EmberApp({
 });
 ```
 ---
+# Problems with async
+---
+# Problems with async
+1. No boundaries
+---
+# Problems with async
+1. No boundaries
+2. Promises can't be canceled (yet)
+---
+# Problems with async
+1. No boundaries
+2. Promises can't be canceled (yet)
+3. Tracking state
+---
+# Problems with async
+1. No boundaries
+2. Promises can't be canceled (yet)
+3. Tracking state
+4. Constrainining concurrency
+---
 # ember-concurrency
 ---
 # ember-concurrency
-1. Scope async to life cycle
+1. Scopes async
 ---
 # ember-concurrency
-1. Scope async to life cycle
-2. Cancel async
+1. Scopes async
+2. Allows canceling async
 ---
 # ember-concurrency
-1. Scope async to life cycle
-2. Cancel async
-3. Examine state of async
+1. Scopes async
+2. Allows canceling async
+3. Exposes state of async
 ---
 # ember-concurrency
-1. Scope async to life cycle
-2. Cancel async
-3. Examine state of async
+1. Scopes async
+2. Allows canceling async
+3. Exposes state of async
+4. Adds constraints to async
 ---
 # More Info
 * [ember-concurrency homepage](http://ember-concurrency.com)
 * [Alex's blog post](https://medium.com/@machty/ember-concurrency-the-solution-to-so-many-problems-you-never-knew-you-had-cce6d7731ba9#.eixlo0chj)
 * [Ember NYC February](https://www.youtube.com/watch?v=uVr5HWzecKI&feature=youtu.be&t=1h8m14s)
+* [Global Ember Meetup](https://www.bigmarker.com/global-ember-meetup/S02E04-Jetpack-Training-Wheels)
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
