@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('management');
   this.route('counter');
-  this.route('cancelling');
+  this.route('canceling');
   this.route('state');
 });
 
